@@ -240,9 +240,9 @@ export default function App() {
           </div>
         </div>
 
-        <div className="absolute top-56 right-4 sm:right-6 animate-float" style={{ animationDelay: "0.3s" }}>
+        <div className="absolute bottom-16 right-4 sm:right-6 animate-float" style={{ animationDelay: "0.3s" }}>
           <div
-            className="px-6 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
+            className="px-6 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm max-w-xs"
             style={{
               backgroundColor: "#CCFBF1",
               borderColor: "#0D7377",
@@ -252,10 +252,18 @@ export default function App() {
             <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-1">
               📍 Local
             </p>
-            <p className="text-lg font-bold text-teal-900">
-              Vivace
+            <p className="text-sm font-bold text-teal-900 leading-snug">
+              QI 19 lotes 13 ao 41
             </p>
-            <p className="text-sm text-teal-700">Salão Bloco A</p>
+            <p className="text-sm font-bold text-teal-900 leading-snug">
+              Residencial Vivace
+            </p>
+            <p className="text-xs text-teal-700 leading-snug">
+              Salão de festas do Bloco A
+            </p>
+            <p className="text-xs text-teal-700 font-semibold mt-1">
+              Taguatinga
+            </p>
           </div>
         </div>
 
@@ -312,8 +320,8 @@ export default function App() {
           <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3">
             Confirmação de presença
           </p>
-          <h2 className="font-display text-4xl font-bold text-ink mb-3">
-            Quem vem celebrar?
+          <h2 className="font-display text-5xl sm:text-6xl font-bold text-ink mb-3 leading-tight">
+            Quem vem<br className="sm:hidden" /> celebrar?
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed">
             Informe o nome completo de todos. Os nomes são necessários para a
