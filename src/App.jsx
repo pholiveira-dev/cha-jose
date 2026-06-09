@@ -121,8 +121,8 @@ function SuccessScreen({ names }) {
           Presença confirmada!
         </h3>
         <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-          Anotamos tudo. Mal podemos esperar para celebrar com vocês o
-          nascimento do José!
+          Anotamos tudo. Mal podemos esperar para celebrar com vocês os
+          preparativos do nascimento do José!
         </p>
       </div>
       <div className="w-full bg-gradient-to-br from-blue-50 to-teal-50 rounded-3xl border-2 border-blue-100 p-6">
@@ -221,7 +221,10 @@ export default function App() {
       {/* ── HERO SECTION ── */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-16 pb-20 min-h-[100svh]">
         {/* Floating cards with date and address */}
-        <div className="absolute top-24 left-4 sm:left-6 animate-float" style={{ animationDelay: "0s" }}>
+        <div
+          className="absolute top-24 left-4 sm:left-6 animate-float"
+          style={{ animationDelay: "0s" }}
+        >
           <div
             className="px-6 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
             style={{
@@ -233,14 +236,15 @@ export default function App() {
             <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-1">
               📅 Data
             </p>
-            <p className="text-lg font-bold text-blue-900">
-              27 de junho
-            </p>
+            <p className="text-lg font-bold text-blue-900">27 de junho</p>
             <p className="text-sm text-blue-700">Sexta-feira · 14h30</p>
           </div>
         </div>
 
-        <div className="absolute bottom-16 right-4 sm:right-6 animate-float" style={{ animationDelay: "0.3s" }}>
+        <div
+          className="absolute bottom-16 right-4 sm:right-6 animate-float"
+          style={{ animationDelay: "0.3s" }}
+        >
           <div
             className="px-6 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm max-w-xs"
             style={{
@@ -270,12 +274,18 @@ export default function App() {
         {/* Main hero content */}
         <div className="relative z-20 max-w-2xl">
           {/* Dinosaur emoji headline */}
-          <div className="animate-fade-up mb-6" style={{ animationDelay: "0.1s" }}>
+          <div
+            className="animate-fade-up mb-6"
+            style={{ animationDelay: "0.1s" }}
+          >
             <div className="text-8xl mb-4 animate-bounce-gentle">🦕</div>
           </div>
 
           {/* Title */}
-          <div className="animate-fade-up mb-8" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="animate-fade-up mb-8"
+            style={{ animationDelay: "0.2s" }}
+          >
             <h1
               className="font-display font-800 leading-tight text-ink"
               style={{ fontSize: "clamp(48px, 12vw, 96px)" }}
@@ -321,7 +331,8 @@ export default function App() {
             Confirmação de presença
           </p>
           <h2 className="font-display text-5xl sm:text-6xl font-bold text-ink mb-3 leading-tight">
-            Quem vem<br className="sm:hidden" /> celebrar?
+            Quem vem
+            <br className="sm:hidden" /> celebrar?
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed">
             Informe o nome completo de todos. Os nomes são necessários para a
