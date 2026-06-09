@@ -103,7 +103,7 @@ function GuestField({ index, value, onChange, error }) {
         />
         {error && (
           <p className="text-red-500 text-xs mt-1">
-            Nome completo (nome e sobrenome) obrigatório.
+            Nome completo (nome e sobrenome ) obrigatório.
           </p>
         )}
       </div>
