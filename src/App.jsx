@@ -242,7 +242,7 @@ export default function App() {
         </div>
 
         <div
-          className="absolute bottom-2 right-4 sm:right-6 animate-float"
+          className="absolute bottom-2 left-1/2 -translate-x-1/2 animate-float"
           style={{ animationDelay: "0.3s" }}
         >
           <div
