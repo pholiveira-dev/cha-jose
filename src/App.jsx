@@ -257,13 +257,7 @@ export default function App() {
               📍 Local
             </p>
             <p className="text-sm font-bold text-teal-900 leading-snug">
-              QI 19 lotes 13 ao 41
-            </p>
-            <p className="text-sm font-bold text-teal-900 leading-snug">
-              Residencial Vivace
-            </p>
-            <p className="text-xs text-teal-700 leading-snug">
-              Salão de festas do Bloco A
+              QI 19 - Residencial Vivace
             </p>
             <p className="text-xs text-teal-700 font-semibold mt-1">
               Taguatinga
