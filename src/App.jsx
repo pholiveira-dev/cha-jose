@@ -257,7 +257,8 @@ export default function App() {
               📍 Local
             </p>
             <p className="text-xs font-semibold text-teal-900 leading-relaxed">
-              QI 19 · Res. Vivace<br />
+              QI 19 · Res. Vivace
+              <br />
               <span className="text-teal-700">Taguatinga</span>
             </p>
           </div>
@@ -323,8 +324,8 @@ export default function App() {
             Confirmação de presença
           </p>
           <h2 className="font-display text-5xl sm:text-6xl font-bold text-ink mb-3 leading-tight">
-            Quem vem
-            <br className="sm:hidden" /> celebrar?
+            Quem vai marcar
+            <br className="sm:hidden" /> presença?
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed">
             Informe o nome completo de todos. Os nomes são necessários para a
