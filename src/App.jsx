@@ -242,32 +242,24 @@ export default function App() {
         </div>
 
         <div
-          className="absolute bottom-2 left-1/2 -translate-x-1/2 animate-float"
-          style={{ animationDelay: "0.3s" }}
+          className="absolute top-40 right-4 sm:right-6 animate-float"
+          style={{ animationDelay: "0.2s" }}
         >
           <div
-            className="px-6 py-5 rounded-3xl border-2 shadow-xl backdrop-blur-sm max-w-xs"
+            className="px-5 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
             style={{
               backgroundColor: "#CCFBF1",
               borderColor: "#0D7377",
               boxShadow: "0 20px 40px rgba(13, 115, 119, 0.15)",
             }}
           >
-            <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-3">
+            <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-2">
               📍 Local
             </p>
-            <div className="flex flex-col items-center gap-1.5">
-              <p className="text-xs font-semibold text-teal-900 uppercase tracking-wide">
-                QI 19
-              </p>
-              <div className="w-6 h-px bg-gradient-to-r from-transparent via-teal-300 to-transparent" />
-              <p className="text-sm font-bold text-teal-900">
-                Res. Vivace
-              </p>
-              <p className="text-xs font-semibold text-teal-700 uppercase tracking-wide">
-                Taguatinga
-              </p>
-            </div>
+            <p className="text-xs font-semibold text-teal-900 leading-relaxed">
+              QI 19 · Res. Vivace<br />
+              <span className="text-teal-700">Taguatinga</span>
+            </p>
           </div>
         </div>
 
