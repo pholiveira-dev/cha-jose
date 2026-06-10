@@ -242,7 +242,7 @@ export default function App() {
         </div>
 
         <div
-          className="absolute bottom-32 right-4 sm:right-6 animate-float"
+          className="absolute bottom-2 right-4 sm:right-6 animate-float"
           style={{ animationDelay: "0.3s" }}
         >
           <div
@@ -256,10 +256,8 @@ export default function App() {
             <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-2">
               📍 Local
             </p>
-            <p className="text-lg font-bold text-teal-900 leading-snug">
-              QI 19 - Residencial Vivace
-            </p>
-            <p className="text-sm text-teal-700 font-semibold mt-2">
+            <p className="text-sm font-bold text-teal-900 leading-snug">
+              QI 19 - Residencial Vivace<br />
               Taguatinga
             </p>
           </div>
