@@ -253,13 +253,21 @@ export default function App() {
               boxShadow: "0 20px 40px rgba(13, 115, 119, 0.15)",
             }}
           >
-            <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-2">
+            <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-3">
               📍 Local
             </p>
-            <p className="text-sm font-bold text-teal-900 leading-snug">
-              QI 19 - Residencial Vivace<br />
-              Taguatinga
-            </p>
+            <div className="flex flex-col items-center gap-1.5">
+              <p className="text-xs font-semibold text-teal-900 uppercase tracking-wide">
+                QI 19
+              </p>
+              <div className="w-6 h-px bg-gradient-to-r from-transparent via-teal-300 to-transparent" />
+              <p className="text-sm font-bold text-teal-900">
+                Res. Vivace
+              </p>
+              <p className="text-xs font-semibold text-teal-700 uppercase tracking-wide">
+                Taguatinga
+              </p>
+            </div>
           </div>
         </div>
 
