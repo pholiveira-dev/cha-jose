@@ -271,7 +271,7 @@ export default function App() {
             className="animate-fade-up mb-6"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="mb-4 animate-bounce-gentle" style={{ width: "400px", height: "400px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div className="mb-4 animate-bounce-gentle" style={{ width: "min(280px, 70vw)", height: "min(280px, 70vw)", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <img src="/bb.webp" alt="Baby Looney Tunes" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
             </div>
           </div>
