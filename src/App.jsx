@@ -31,7 +31,6 @@ END:VCALENDAR`;
   URL.revokeObjectURL(link.href);
 }
 
-
 // Animated gradient background with subtle blobs
 function GradientBg() {
   return (
@@ -246,61 +245,44 @@ export default function App() {
       <GradientBg />
 
       {/* ── HERO SECTION ── */}
-      <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-16 pb-20 min-h-[100svh]">
-        {/* Floating card with date and add to calendar button */}
-        <div
-          className="absolute top-8 left-2 sm:left-6 animate-float pointer-events-auto"
-          style={{ animationDelay: "0s" }}
-        >
-          <div
-            className="px-4 py-3 rounded-2xl border-2 shadow-lg backdrop-blur-sm"
-            style={{
-              backgroundColor: "#E0F2FE",
-              borderColor: "#0369A1",
-              boxShadow: "0 20px 40px rgba(2, 132, 199, 0.15)",
-            }}
-          >
-            <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
-              📅 Data
-            </p>
-            <p className="text-sm font-bold text-blue-900 leading-tight mb-3">
-              Sábado
-              <br />
-              27 de junho
-            </p>
-            <button
-              onClick={addToCalendar}
-              className="w-full px-3 py-1.5 bg-blue-600 text-white text-xs font-bold rounded-full hover:bg-blue-700 transition-all active:scale-95"
-            >
-              + Agenda
-            </button>
-          </div>
-        </div>
-
+      <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-20 pb-16 min-h-[100svh]">
         {/* Main hero content */}
-        <div className="relative z-20 max-w-2xl">
-          {/* Baby Looney Tunes illustration headline */}
-          <div
-            className="animate-fade-up mb-6"
-            style={{ animationDelay: "0.1s" }}
-          >
+        <div className="relative z-20 max-w-3xl w-full">
+          {/* Image with card overlay */}
+          <div className="relative mb-12">
+            {/* Baby Looney Tunes illustration */}
             <div
-              className="mb-4 animate-bounce-gentle"
-              style={{
-                width: "min(280px, 70vw)",
-                height: "min(280px, 70vw)",
-                margin: "0 auto",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+              className="animate-fade-up mb-0"
+              style={{ animationDelay: "0.1s" }}
             >
-              <img
-                src="/bb.webp"
-                alt="Baby Looney Tunes"
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
-              />
+              <div
+                className="animate-bounce-gentle"
+                style={{
+                  width: "min(320px, 80vw)",
+                  height: "min(320px, 80vw)",
+                  margin: "0 auto",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img
+                  src="/bb.webp"
+                  alt="Baby Looney Tunes"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
             </div>
+
+            {/* Date card positioned elegantly */}
+            <div
+              className="animate-fade-up mt-8 flex justify-center"
+              style={{ animationDelay: "0.2s" }}
+            ></div>
           </div>
 
           {/* Title */}
