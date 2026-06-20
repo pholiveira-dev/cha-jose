@@ -223,7 +223,7 @@ export default function App() {
         {/* Floating cards with date and address */}
         <div
           className="absolute top-24 left-4 sm:left-6 animate-float"
-          style={{ animationDelay: "0s" }}
+          style={{ animationDelay: "0s", zIndex: 30 }}
         >
           <div
             className="px-6 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
@@ -243,7 +243,7 @@ export default function App() {
 
         <div
           className="absolute top-40 right-4 sm:right-6 animate-float"
-          style={{ animationDelay: "0.2s" }}
+          style={{ animationDelay: "0.2s", zIndex: 30 }}
         >
           <div
             className="px-5 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
