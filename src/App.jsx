@@ -329,7 +329,7 @@ export default function App() {
         {/* Main hero content */}
         <div className="relative z-20 max-w-3xl w-full flex flex-col items-center justify-center">
           {/* Image container */}
-          <div className="relative mb-4">
+          <div className="relative mb-6 w-full flex justify-center">
             {/* Baby Looney Tunes illustration */}
             <div
               className="animate-fade-up"
@@ -340,7 +340,6 @@ export default function App() {
                 style={{
                   width: "min(240px, 60vw)",
                   height: "min(240px, 60vw)",
-                  margin: "0 auto",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -361,7 +360,7 @@ export default function App() {
 
           {/* Date and Location buttons */}
           <div
-            className="animate-fade-up flex gap-3 mb-6 sm:mb-8 justify-center"
+            className="animate-fade-up flex flex-row gap-3 mb-6 sm:mb-8 justify-center w-full"
             style={{ animationDelay: "0.15s" }}
           >
             <button
@@ -377,6 +376,8 @@ export default function App() {
               📍 Local
             </button>
           </div>
+
+          {/* Title */}
           <div
             className="animate-fade-up mb-6 sm:mb-8"
             style={{ animationDelay: "0.2s" }}
