@@ -242,7 +242,7 @@ export default function App() {
         </div>
 
         <div
-          className="absolute top-32 right-2 sm:right-6 animate-float pointer-events-none"
+          className="absolute top-16 right-2 sm:right-6 animate-float pointer-events-none"
           style={{ animationDelay: "0.2s" }}
         >
           <div
