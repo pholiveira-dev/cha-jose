@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // ── CONFIG ─────────────────────────────────────────────────────────
 const APPS_SCRIPT_URL =
@@ -170,7 +170,7 @@ function SuccessScreen({ names }) {
 function InfoModal({ type, onClose }) {
   if (type === "date") {
     return (
-      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40 p-4">
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/40 p-4">
         <div
           className="bg-white rounded-3xl border-2 border-blue-200 shadow-2xl p-6 max-w-sm w-full animate-fade-up"
           style={{
@@ -205,7 +205,7 @@ function InfoModal({ type, onClose }) {
 
   if (type === "location") {
     return (
-      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40 p-4">
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/40 p-4">
         <div
           className="bg-white rounded-3xl border-2 border-teal-200 shadow-2xl p-6 max-w-sm w-full animate-fade-up"
           style={{
@@ -255,6 +255,19 @@ export default function App() {
   const [toast, setToast] = useState("");
   const [showKidsNote, setShowKidsNote] = useState(false);
   const [showInfoModal, setShowInfoModal] = useState(null); // "date" ou "location"
+
+  // Scroll to top e previne scroll quando modal abre
+  useEffect(() => {
+    if (showInfoModal) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [showInfoModal]);
 
   const showToast = (msg) => {
     setToast(msg);
@@ -325,11 +338,11 @@ export default function App() {
       <GradientBg />
 
       {/* ── HERO SECTION ── */}
-      <section className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-8 pb-8 min-h-[100svh]">
+      <section className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 py-8 min-h-screen">
         {/* Main hero content */}
-        <div className="relative z-20 max-w-3xl w-full flex flex-col items-center justify-center">
+        <div className="relative z-20 max-w-3xl w-full flex flex-col items-center justify-center flex-1">
           {/* Image container */}
-          <div className="relative mb-6 w-full flex justify-center">
+          <div className="mb-6 w-full flex justify-center">
             {/* Baby Looney Tunes illustration */}
             <div
               className="animate-fade-up"
