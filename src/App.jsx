@@ -245,11 +245,11 @@ export default function App() {
       <GradientBg />
 
       {/* ── HERO SECTION ── */}
-      <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-20 pb-16 min-h-[100svh]">
+      <section className="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-8 pb-8 min-h-[100svh]">
         {/* Main hero content */}
-        <div className="relative z-20 max-w-3xl w-full">
+        <div className="relative z-20 max-w-3xl w-full flex flex-col items-center justify-center">
           {/* Image container */}
-          <div className="relative mb-8">
+          <div className="relative mb-4">
             {/* Baby Looney Tunes illustration */}
             <div
               className="animate-fade-up"
@@ -258,8 +258,8 @@ export default function App() {
               <div
                 className="animate-bounce-gentle"
                 style={{
-                  width: "min(320px, 80vw)",
-                  height: "min(320px, 80vw)",
+                  width: "min(240px, 60vw)",
+                  height: "min(240px, 60vw)",
                   margin: "0 auto",
                   display: "flex",
                   alignItems: "center",
@@ -281,12 +281,12 @@ export default function App() {
 
           {/* Title */}
           <div
-            className="animate-fade-up mb-8"
+            className="animate-fade-up mb-6 sm:mb-8"
             style={{ animationDelay: "0.2s" }}
           >
             <h1
               className="font-display font-800 leading-tight text-ink"
-              style={{ fontSize: "clamp(48px, 12vw, 96px)" }}
+              style={{ fontSize: "clamp(36px, 10vw, 72px)" }}
             >
               Chá de
               <br />
@@ -307,13 +307,13 @@ export default function App() {
           </div>
 
           {/* CTA Button */}
-          <div className="animate-fade-up" style={{ animationDelay: "0.35s" }}>
+          <div className="animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <a
               href="#confirmar"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold text-base px-10 py-4 rounded-full shadow-2xl transition-all hover:shadow-3xl hover:-translate-y-1 active:translate-y-0"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 rounded-full shadow-2xl transition-all hover:shadow-3xl hover:-translate-y-1 active:translate-y-0"
             >
               Confirmar presença
-              <span className="text-xl">↓</span>
+              <span className="text-lg sm:text-xl">↓</span>
             </a>
           </div>
         </div>
