@@ -242,24 +242,24 @@ export default function App() {
         </div>
 
         <div
-          className="absolute top-16 right-2 sm:right-6 animate-float pointer-events-none"
+          className="absolute bottom-80 right-2 sm:right-6 animate-float pointer-events-none"
           style={{ animationDelay: "0.2s" }}
         >
           <div
-            className="px-4 py-3 sm:px-5 sm:py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm text-xs sm:text-sm"
+            className="px-3 py-2 sm:px-4 sm:py-3 rounded-2xl border-2 shadow-lg backdrop-blur-sm"
             style={{
               backgroundColor: "#CCFBF1",
               borderColor: "#0D7377",
               boxShadow: "0 20px 40px rgba(13, 115, 119, 0.15)",
             }}
           >
-            <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-2">
+            <p className="text-xs font-bold uppercase tracking-tight text-teal-700 mb-1">
               📍 Local
             </p>
-            <p className="font-semibold text-teal-900 leading-relaxed">
+            <p className="text-xs font-semibold text-teal-900 leading-tight">
               QI 19 · Res. Vivace
               <br />
-              <span className="text-teal-700">Taguatinga</span>
+              <span className="text-teal-700 text-xs">Taguatinga</span>
             </p>
           </div>
         </div>
