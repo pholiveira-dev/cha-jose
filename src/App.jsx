@@ -178,11 +178,11 @@ function InfoModal({ type, onClose }) {
             borderColor: "#0369A1",
           }}
         >
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-center items-start mb-4 relative">
             <h3 className="text-2xl font-bold text-blue-900">📅 Data & Horário</h3>
             <button
               onClick={onClose}
-              className="text-xl text-blue-600 hover:text-blue-800 transition"
+              className="absolute right-0 top-0 text-xl text-blue-600 hover:text-blue-800 transition"
             >
               ✕
             </button>
@@ -213,11 +213,11 @@ function InfoModal({ type, onClose }) {
             borderColor: "#0D7377",
           }}
         >
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-center items-start mb-4 relative">
             <h3 className="text-2xl font-bold text-teal-900">📍 Local</h3>
             <button
               onClick={onClose}
-              className="text-xl text-teal-600 hover:text-teal-800 transition"
+              className="absolute right-0 top-0 text-xl text-teal-600 hover:text-teal-800 transition"
             >
               ✕
             </button>
