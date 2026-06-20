@@ -248,11 +248,11 @@ export default function App() {
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-20 pb-16 min-h-[100svh]">
         {/* Main hero content */}
         <div className="relative z-20 max-w-3xl w-full">
-          {/* Image with card overlay */}
-          <div className="relative mb-12">
+          {/* Image container */}
+          <div className="relative mb-8">
             {/* Baby Looney Tunes illustration */}
             <div
-              className="animate-fade-up mb-0"
+              className="animate-fade-up"
               style={{ animationDelay: "0.1s" }}
             >
               <div
@@ -277,12 +277,6 @@ export default function App() {
                 />
               </div>
             </div>
-
-            {/* Date card positioned elegantly */}
-            <div
-              className="animate-fade-up mt-8 flex justify-center"
-              style={{ animationDelay: "0.2s" }}
-            ></div>
           </div>
 
           {/* Title */}
