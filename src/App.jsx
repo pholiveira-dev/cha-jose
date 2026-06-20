@@ -5,6 +5,33 @@ const APPS_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbwG031Wp-c4SVBI26IWKo9gedaL9FyIyYLsMI5ZEk4moQNrfcMxlRf09vooY4_zCxNpQw/exec";
 // ───────────────────────────────────────────────────────────────────
 
+// Generate and add event to calendar (works on iOS, Android, Desktop)
+function addToCalendar() {
+  const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Chá de Fralda do José//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cha-jose-${Date.now()}@example.com
+DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z
+DTSTART:20260627T143000
+DTEND:20260627T153000
+SUMMARY:Chá de Fralda do José
+DESCRIPTION:Chá de Fralda do José - QI 19, Res. Vivace, Taguatinga
+LOCATION:QI 19, Res. Vivace, Taguatinga, Brazil
+END:VEVENT
+END:VCALENDAR`;
+
+  const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "cha-jose-2026.ics";
+  link.click();
+  URL.revokeObjectURL(link.href);
+}
+
+
 // Animated gradient background with subtle blobs
 function GradientBg() {
   return (
@@ -220,24 +247,33 @@ export default function App() {
 
       {/* ── HERO SECTION ── */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-16 pb-20 min-h-[100svh]">
-        {/* Floating card with date - positioned absolutely, doesn't take space */}
+        {/* Floating card with date and add to calendar button */}
         <div
-          className="absolute top-8 left-2 sm:left-6 animate-float pointer-events-none"
+          className="absolute top-8 left-2 sm:left-6 animate-float pointer-events-auto"
           style={{ animationDelay: "0s" }}
         >
           <div
-            className="px-6 py-4 sm:px-8 sm:py-5 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
+            className="px-4 py-3 rounded-2xl border-2 shadow-lg backdrop-blur-sm"
             style={{
               backgroundColor: "#E0F2FE",
               borderColor: "#0369A1",
               boxShadow: "0 20px 40px rgba(2, 132, 199, 0.15)",
             }}
           >
-            <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-1">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-2">
               📅 Data
             </p>
-            <p className="font-bold text-blue-900 text-lg sm:text-xl">27 de junho</p>
-            <p className="text-blue-700 text-sm">Sábado · 14h30</p>
+            <p className="text-sm font-bold text-blue-900 leading-tight mb-3">
+              Sábado
+              <br />
+              27 de junho
+            </p>
+            <button
+              onClick={addToCalendar}
+              className="w-full px-3 py-1.5 bg-blue-600 text-white text-xs font-bold rounded-full hover:bg-blue-700 transition-all active:scale-95"
+            >
+              + Agenda
+            </button>
           </div>
         </div>
 
