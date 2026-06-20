@@ -234,7 +234,7 @@ export default function App() {
             }}
           >
             <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-1">
-              📅 Data
+              🗓️ Data
             </p>
             <p className="font-bold text-blue-900">27 de junho</p>
             <p className="text-blue-700">Sábado · 14h30</p>
@@ -271,8 +271,22 @@ export default function App() {
             className="animate-fade-up mb-6"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="mb-4 animate-bounce-gentle" style={{ width: "min(280px, 70vw)", height: "min(280px, 70vw)", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <img src="/bb.webp" alt="Baby Looney Tunes" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+            <div
+              className="mb-4 animate-bounce-gentle"
+              style={{
+                width: "min(280px, 70vw)",
+                height: "min(280px, 70vw)",
+                margin: "0 auto",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src="/bb.webp"
+                alt="Baby Looney Tunes"
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              />
             </div>
           </div>
 
