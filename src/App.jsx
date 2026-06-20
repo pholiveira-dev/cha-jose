@@ -237,7 +237,7 @@ export default function App() {
               📅 Data
             </p>
             <p className="text-lg font-bold text-blue-900">27 de junho</p>
-            <p className="text-sm text-blue-700">Sexta-feira · 14h30</p>
+            <p className="text-sm text-blue-700">Sábado · 14h30</p>
           </div>
         </div>
 
@@ -266,12 +266,14 @@ export default function App() {
 
         {/* Main hero content */}
         <div className="relative z-20 max-w-2xl">
-          {/* Dinosaur emoji headline */}
+          {/* Baby Looney Tunes illustration headline */}
           <div
             className="animate-fade-up mb-6"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="text-8xl mb-4 animate-bounce-gentle">🦕</div>
+            <div className="mb-4 animate-bounce-gentle" style={{ width: "400px", height: "400px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <img src="/bb.webp" alt="Baby Looney Tunes" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+            </div>
           </div>
 
           {/* Title */}

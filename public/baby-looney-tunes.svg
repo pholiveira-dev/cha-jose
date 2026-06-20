@@ -1,0 +1,76 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Baby Bugs Bunny -->
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="140" rx="45" ry="50" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="70" r="40" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  
+  <!-- Ears -->
+  <ellipse cx="70" cy="25" rx="12" ry="35" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  <ellipse cx="130" cy="25" rx="12" ry="35" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  
+  <!-- Inner ears -->
+  <ellipse cx="70" cy="35" rx="6" ry="20" fill="#FFC0CB"/>
+  <ellipse cx="130" cy="35" rx="6" ry="20" fill="#FFC0CB"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="60" r="6" fill="white" stroke="#000" stroke-width="1"/>
+  <circle cx="115" cy="60" r="6" fill="white" stroke="#000" stroke-width="1"/>
+  
+  <!-- Pupils -->
+  <circle cx="87" cy="62" r="3" fill="black"/>
+  <circle cx="117" cy="62" r="3" fill="black"/>
+  
+  <!-- Shine in eyes -->
+  <circle cx="86" cy="60" r="1.5" fill="white"/>
+  <circle cx="116" cy="60" r="1.5" fill="white"/>
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="75" rx="5" ry="6" fill="#000"/>
+  
+  <!-- Mouth -->
+  <path d="M 100 75 Q 95 85 85 82" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 100 75 Q 105 85 115 82" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Teeth -->
+  <line x1="90" y1="82" x2="90" y2="87" stroke="#000" stroke-width="1"/>
+  <line x1="95" y1="84" x2="95" y2="88" stroke="#000" stroke-width="1"/>
+  <line x1="100" y1="85" x2="100" y2="89" stroke="#000" stroke-width="1"/>
+  <line x1="105" y1="84" x2="105" y2="88" stroke="#000" stroke-width="1"/>
+  <line x1="110" y1="82" x2="110" y2="87" stroke="#000" stroke-width="1"/>
+  
+  <!-- Cheeks -->
+  <circle cx="60" cy="70" r="8" fill="#FFB6C1" opacity="0.6"/>
+  <circle cx="140" cy="70" r="8" fill="#FFB6C1" opacity="0.6"/>
+  
+  <!-- Arms -->
+  <ellipse cx="60" cy="130" rx="15" ry="35" fill="#F5DEB3" stroke="#8B7355" stroke-width="2" transform="rotate(-25 60 130)"/>
+  <ellipse cx="140" cy="130" rx="15" ry="35" fill="#F5DEB3" stroke="#8B7355" stroke-width="2" transform="rotate(25 140 130)"/>
+  
+  <!-- Paws/Hands -->
+  <circle cx="45" cy="160" r="12" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  <circle cx="155" cy="160" r="12" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  
+  <!-- Legs -->
+  <ellipse cx="80" cy="185" rx="16" ry="30" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  <ellipse cx="120" cy="185" rx="16" ry="30" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  
+  <!-- Feet -->
+  <ellipse cx="80" cy="215" rx="18" ry="12" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  <ellipse cx="120" cy="215" rx="18" ry="12" fill="#F5DEB3" stroke="#8B7355" stroke-width="2"/>
+  
+  <!-- Toe marks -->
+  <line x1="70" y1="220" x2="70" y2="224" stroke="#8B7355" stroke-width="1"/>
+  <line x1="80" y1="221" x2="80" y2="225" stroke="#8B7355" stroke-width="1"/>
+  <line x1="90" y1="220" x2="90" y2="224" stroke="#8B7355" stroke-width="1"/>
+  <line x1="110" y1="220" x2="110" y2="224" stroke="#8B7355" stroke-width="1"/>
+  <line x1="120" y1="221" x2="120" y2="225" stroke="#8B7355" stroke-width="1"/>
+  <line x1="130" y1="220" x2="130" y2="224" stroke="#8B7355" stroke-width="1"/>
+  
+  <!-- Tail (cotton ball like) -->
+  <circle cx="135" cy="170" r="10" fill="white" stroke="#8B7355" stroke-width="1"/>
+  <circle cx="142" cy="165" r="8" fill="white" stroke="#8B7355" stroke-width="1"/>
+  <circle cx="145" cy="175" r="7" fill="white" stroke="#8B7355" stroke-width="1"/>
+</svg>
