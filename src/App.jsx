@@ -220,61 +220,59 @@ export default function App() {
 
       {/* ── HERO SECTION ── */}
       <section className="relative z-10 flex flex-col items-center justify-center text-center px-5 pt-16 pb-20 min-h-[100svh]">
+        {/* Floating cards with date and address - positioned absolutely, doesn't take space */}
+        <div
+          className="absolute top-16 left-2 sm:left-6 animate-float pointer-events-none"
+          style={{ animationDelay: "0s" }}
+        >
+          <div
+            className="px-4 py-3 sm:px-6 sm:py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm text-xs sm:text-sm"
+            style={{
+              backgroundColor: "#E0F2FE",
+              borderColor: "#0369A1",
+              boxShadow: "0 20px 40px rgba(2, 132, 199, 0.15)",
+            }}
+          >
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-1">
+              📅 Data
+            </p>
+            <p className="font-bold text-blue-900">27 de junho</p>
+            <p className="text-blue-700">Sábado · 14h30</p>
+          </div>
+        </div>
+
+        <div
+          className="absolute top-32 right-2 sm:right-6 animate-float pointer-events-none"
+          style={{ animationDelay: "0.2s" }}
+        >
+          <div
+            className="px-4 py-3 sm:px-5 sm:py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm text-xs sm:text-sm"
+            style={{
+              backgroundColor: "#CCFBF1",
+              borderColor: "#0D7377",
+              boxShadow: "0 20px 40px rgba(13, 115, 119, 0.15)",
+            }}
+          >
+            <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-2">
+              📍 Local
+            </p>
+            <p className="font-semibold text-teal-900 leading-relaxed">
+              QI 19 · Res. Vivace
+              <br />
+              <span className="text-teal-700">Taguatinga</span>
+            </p>
+          </div>
+        </div>
+
         {/* Main hero content */}
         <div className="relative z-20 max-w-2xl">
           {/* Baby Looney Tunes illustration headline */}
           <div
-            className="animate-fade-up mb-8"
+            className="animate-fade-up mb-6"
             style={{ animationDelay: "0.1s" }}
           >
             <div className="mb-4 animate-bounce-gentle" style={{ width: "min(280px, 70vw)", height: "min(280px, 70vw)", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <img src="/bb.webp" alt="Baby Looney Tunes" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-            </div>
-          </div>
-
-          {/* Floating cards with date and address */}
-          <div className="flex gap-4 justify-center mb-8 flex-wrap">
-            <div
-              className="animate-float"
-              style={{ animationDelay: "0s" }}
-            >
-              <div
-                className="px-6 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
-                style={{
-                  backgroundColor: "#E0F2FE",
-                  borderColor: "#0369A1",
-                  boxShadow: "0 20px 40px rgba(2, 132, 199, 0.15)",
-                }}
-              >
-                <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-1">
-                  📅 Data
-                </p>
-                <p className="text-lg font-bold text-blue-900">27 de junho</p>
-                <p className="text-sm text-blue-700">Sábado · 14h30</p>
-              </div>
-            </div>
-
-            <div
-              className="animate-float"
-              style={{ animationDelay: "0.2s" }}
-            >
-              <div
-                className="px-5 py-4 rounded-3xl border-2 shadow-xl backdrop-blur-sm"
-                style={{
-                  backgroundColor: "#CCFBF1",
-                  borderColor: "#0D7377",
-                  boxShadow: "0 20px 40px rgba(13, 115, 119, 0.15)",
-                }}
-              >
-                <p className="text-xs font-bold uppercase tracking-widest text-teal-700 mb-2">
-                  📍 Local
-                </p>
-                <p className="text-xs font-semibold text-teal-900 leading-relaxed">
-                  QI 19 · Res. Vivace
-                  <br />
-                  <span className="text-teal-700">Taguatinga</span>
-                </p>
-              </div>
             </div>
           </div>
 
