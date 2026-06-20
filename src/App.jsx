@@ -166,6 +166,85 @@ function SuccessScreen({ names }) {
   );
 }
 
+// Info Modal for Date and Location
+function InfoModal({ type, onClose }) {
+  if (type === "date") {
+    return (
+      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40 p-4">
+        <div
+          className="bg-white rounded-3xl border-2 border-blue-200 shadow-2xl p-6 max-w-sm w-full animate-fade-up"
+          style={{
+            backgroundColor: "#E0F2FE",
+            borderColor: "#0369A1",
+          }}
+        >
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-2xl font-bold text-blue-900">📅 Data & Horário</h3>
+            <button
+              onClick={onClose}
+              className="text-xl text-blue-600 hover:text-blue-800 transition"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="text-center">
+            <p className="text-lg font-semibold text-blue-900 mb-2">Sábado</p>
+            <p className="text-2xl font-bold text-blue-900 mb-4">27 de junho</p>
+            <p className="text-lg font-semibold text-blue-700">14h30</p>
+          </div>
+          <button
+            onClick={addToCalendar}
+            className="w-full mt-4 px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition-all"
+          >
+            + Adicionar à Agenda
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (type === "location") {
+    return (
+      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40 p-4">
+        <div
+          className="bg-white rounded-3xl border-2 border-teal-200 shadow-2xl p-6 max-w-sm w-full animate-fade-up"
+          style={{
+            backgroundColor: "#CCFBF1",
+            borderColor: "#0D7377",
+          }}
+        >
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-2xl font-bold text-teal-900">📍 Local</h3>
+            <button
+              onClick={onClose}
+              className="text-xl text-teal-600 hover:text-teal-800 transition"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="text-center">
+            <p className="text-lg font-semibold text-teal-900 mb-2">
+              Residencial Vivace
+            </p>
+            <p className="text-2xl font-bold text-teal-900 mb-2">QI 19</p>
+            <p className="text-lg text-teal-700 mb-4">Taguatinga - DF</p>
+            <a
+              href="https://maps.google.com/?q=QI+19+Res+Vivace+Taguatinga"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-700 transition-all"
+            >
+              🗺️ Abrir no Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
 export default function App() {
   const [mainName, setMainName] = useState("");
   const [guests, setGuests] = useState([]);
@@ -175,6 +254,7 @@ export default function App() {
   const [confirmedNames, setConfirmedNames] = useState([]);
   const [toast, setToast] = useState("");
   const [showKidsNote, setShowKidsNote] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(null); // "date" ou "location"
 
   const showToast = (msg) => {
     setToast(msg);
@@ -279,7 +359,24 @@ export default function App() {
             </div>
           </div>
 
-          {/* Title */}
+          {/* Date and Location buttons */}
+          <div
+            className="animate-fade-up flex gap-3 mb-6 sm:mb-8 justify-center"
+            style={{ animationDelay: "0.15s" }}
+          >
+            <button
+              onClick={() => setShowInfoModal("date")}
+              className="px-5 py-2 sm:px-6 sm:py-3 bg-blue-100 border-2 border-blue-300 text-blue-700 font-bold text-sm sm:text-base rounded-full hover:bg-blue-200 transition-all active:scale-95"
+            >
+              📅 Data
+            </button>
+            <button
+              onClick={() => setShowInfoModal("location")}
+              className="px-5 py-2 sm:px-6 sm:py-3 bg-teal-100 border-2 border-teal-300 text-teal-700 font-bold text-sm sm:text-base rounded-full hover:bg-teal-200 transition-all active:scale-95"
+            >
+              📍 Local
+            </button>
+          </div>
           <div
             className="animate-fade-up mb-6 sm:mb-8"
             style={{ animationDelay: "0.2s" }}
@@ -457,6 +554,14 @@ export default function App() {
       <footer className="relative z-10 text-center pb-8 text-xs font-semibold text-gray-500">
         Feito com 💙 para o José
       </footer>
+
+      {/* Info Modal */}
+      {showInfoModal && (
+        <InfoModal
+          type={showInfoModal}
+          onClose={() => setShowInfoModal(null)}
+        />
+      )}
 
       {/* Toast notification */}
       {toast && (
