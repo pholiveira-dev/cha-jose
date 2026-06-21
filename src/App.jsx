@@ -170,31 +170,31 @@ function SuccessScreen({ names }) {
 function InfoModal({ type, onClose }) {
   if (type === "date") {
     return (
-      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/40 p-4">
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/40 px-4 py-8 sm:p-4">
         <div
-          className="bg-white rounded-3xl border-2 border-blue-200 shadow-2xl p-6 max-w-sm w-full animate-fade-up"
+          className="bg-white rounded-2xl sm:rounded-3xl border-2 shadow-2xl p-6 sm:p-8 w-full max-w-sm animate-fade-up"
           style={{
             backgroundColor: "#E0F2FE",
             borderColor: "#0369A1",
           }}
         >
-          <div className="flex justify-center items-start mb-4 relative">
-            <h3 className="text-2xl font-bold text-blue-900">📅 Data & Horário</h3>
+          <div className="flex justify-center items-start mb-6 relative">
+            <h3 className="text-xl sm:text-2xl font-bold text-blue-900 text-center">📅 Data & Horário</h3>
             <button
               onClick={onClose}
-              className="absolute right-0 top-0 text-xl text-blue-600 hover:text-blue-800 transition"
+              className="absolute right-0 top-0 text-lg sm:text-xl text-blue-600 hover:text-blue-800 transition"
             >
               ✕
             </button>
           </div>
-          <div className="text-center">
-            <p className="text-lg font-semibold text-blue-900 mb-2">Sábado</p>
-            <p className="text-2xl font-bold text-blue-900 mb-4">27 de junho</p>
-            <p className="text-lg font-semibold text-blue-700">14h30</p>
+          <div className="text-center space-y-3 mb-6">
+            <p className="text-base sm:text-lg font-semibold text-blue-900">Sábado</p>
+            <p className="text-xl sm:text-2xl font-bold text-blue-900">27 de junho</p>
+            <p className="text-base sm:text-lg font-semibold text-blue-700">14h30</p>
           </div>
           <button
             onClick={addToCalendar}
-            className="w-full mt-4 px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition-all"
+            className="w-full px-4 py-2.5 sm:py-3 bg-blue-600 text-white text-sm sm:text-base font-bold rounded-full hover:bg-blue-700 transition-all active:scale-95"
           >
             + Adicionar à Agenda
           </button>
